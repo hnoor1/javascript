@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js harjutused</title>
+    </head>
+    <body> </body>
+    <script>
+    
+    // Andmerida analüüs
+
+    // Harjutus 2
+    //"1,Marshal,Martinovic,mmartinovic0@dedecms.com,Male,40.19.226.175". Eralda ja kuva sellest IP-aadress ja emailist kasutajanimi
+    let data = "1,Marshal,Martinovic,mmartinovic0@dedecms.com,Male,40.19.226.175";
+    console.log(data.split(",")[5]);
+    let tykeldused = data.split(",");
+    console.log(tykeldused[3].split ("@")[0])
+
+
+    //Kellaaeg
+    //Luua kolm muutujat: tunnid, minutid, sekundid. Ühenda muutujad kokku, lisades nende vahele kooloni (:) ja lõppu tähed PM.
+
+    let t = 2;
+    let m = 38;
+    let s = 59;
+    console.log (t+":"+m+":"+s+"PM");
+    // Mallide kasutamine Loo kaks muutujat: eesnimi ja perenimi. Võta kummaski nimest esitähed ning kasuta lauses. Kasuta lause moodustamisel malle (Template literals)
+    let enimi = "Mari";
+    let pnimi = "Maasikas";
+    console.log(`${enimi} ${pnimi} nimetähed on ${enimi[0]}.${pnimi[0]}.`)
+
+    //Harjutus 1
+    console.log("Tere maailm!");
+    console.log(typeof 4.2);
+    console.log(typeof "Will Code 4 food");
+    console.log(typeof "123");
+    console.log(typeof true);
+    console.log(typeof [1, 2, 3]);
+    console.log(typeof false);
+    console.log(typeof "true");
+    console.log(typeof undefined);
+    </script>
+</html>
