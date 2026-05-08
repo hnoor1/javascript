@@ -7,10 +7,61 @@
     </head>
     <body> </body>
     <script>
-    
-    // Andmerida analüüs
+   
+    //Harjutus 4
 
-    // Harjutus 2
+    //Sportlased
+    let sportlased = [
+        ["Alice", 25, [10.2, 9.8, 10.5]],
+        ["Bob", 22, [9.5, 9.6, 9.7]],
+        ["Charlie", 28, [11.1, 11.2, 11.5]]
+        ];
+    console.log(sportlased[0][0]);
+    console.log(Math.max(...sportlased[0][2]));
+    console.log(sportlased[1][0]);
+    console.log(Math.max(...sportlased[1][2]));
+    console.log(sportlased[2][0]);
+    console.log(Math.max(...sportlased[2][2]));
+
+    // Nädalapäevad
+    let np = ["Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede"];
+    console.log("Massiivi suurus: "+np.length);
+    np.push("Laupäev", "Pühapäev");
+    np.reverse();
+    console.log("Viimane element: "+np[np.length-1]);
+
+
+    //Harjutus 3
+    // Serveri töökulu
+    //Sinu ülesanne on arvutada, kui palju maksab serveri töös hoidmine ühe tunni jooksul, kasutades järgmisi andmeid:
+    // Serveri võimsus: 400 vatti (W)
+    // Elektri hind: 9.69 senti/kWh
+    // Sinu ülesanne on arvutada serveri töökulu ühe tunni jooksul eurodes. Selleks peate järgima järgmisi samme:
+    // Arvuta serveri voolutarbimine kilovatt-tundides (kWh) kasutades järgmist valem:
+    // Voolutarbimine (kWh) = Võimsus (W) / 1000
+    // Arvuta töökulu, korrutades serveri voolutarbimise elektri hinnaga:
+    // Töökulu (eurodes) = Voolutarbimine (kWh) * Elektri hind (eurod/kWh)
+    // Oma vastuses anna teada, kui palju maksab serveri töös hoidmine ühe tunni jooksul eurodes.
+    
+    let voimsus = 400;
+    let hind = 9.69;
+    let voolutarbimine = voimsus/ 1000;
+    let kulu = voolutarbimine * hind;
+    console.log(`Serveri töökulu on ${kulu.toFixed(2)}`);
+
+
+
+   //Sõidu aeg ja kaugus. Õpilane tahab teada, kui kaua võtab aega teatud kauguse läbimine kindla kiirusega.
+   // Kasuta muutujaid sõidu kauguse (kilomeetrites) ja kiiruse (kilomeetrites tunnis) hoidmiseks. 
+   // Arvuta ja kuva konsooli sõidu aeg (tundides).
+
+   let kaugus = 100;
+   let kiirus = 90;
+   let aeg = kaugus/kiirus;
+   console.log(`Sõitmiseks kuluv aeg: ${aeg.toFixed(2)}`);
+   
+   // Harjutus 2
+    // Andmerida analüüs
     //"1,Marshal,Martinovic,mmartinovic0@dedecms.com,Male,40.19.226.175". Eralda ja kuva sellest IP-aadress ja emailist kasutajanimi
     let data = "1,Marshal,Martinovic,mmartinovic0@dedecms.com,Male,40.19.226.175";
     console.log(data.split(",")[5]);
