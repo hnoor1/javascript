@@ -20,7 +20,8 @@
     
     while (counter <= money.length){
         if (money[counter]<= 2) {
-            console.log("Leidsin mündi!");
+            coins.push(money[counter]);
+            sum+=money[counter];
         }
         counter++;
     }
