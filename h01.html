@@ -7,7 +7,44 @@
     </head>
     <body> </body>
     <script>
-   
+
+    // Harjutus 6
+    // Positiivne või negatiivne
+    // Kirjuta switch-case programm, mis kontrollib, kas sisestatud number on positiivne, negatiivne või null. 
+    // Programm peaks väljastama vastava teate vastavalt sisestatud numbri väärtusele.
+
+    let arv = 3;
+    switch(true) {
+        case (arv > 0): 
+            console.log("Positiivne!");
+            break;
+        case (arv == 0): 
+            console.log("Null!");
+            break;
+        case (arv < 0): 
+            console.log("Negatiivne!");
+            break;
+        default:
+            console.log("Mingi jama!")
+    }
+
+    // Harjtus 5
+    // Temperatuur
+    // Kirjutage programm, mis kontrollib saadud temperatuuri põhjal olukorda. 
+    // Kui temperatuur on suurem kui 25 kraadi, väljastage “Väga kuum ilm!”. 
+    // Kui temperatuur on vahemikus 15 kuni 25 kraadi, väljastage “Mõnus temperatuur”. 
+    // Kui temperatuur on väiksem kui 15 kraadi, väljastage “Jahe ilm”. 
+
+    let temp = 12;
+    if (temp > 25) {
+        console.log("Kuum!");
+    } else if (temp >= 15 && temp <= 25){
+        console.log("Norm!");
+    } else {
+        console.log("Jahe!");
+    }
+
+
     //Harjutus 4
 
     //Sportlased
