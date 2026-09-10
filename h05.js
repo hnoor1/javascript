@@ -131,3 +131,7 @@ const inimesteAndmed = [
 { nimi: "Kadi Kask", isikukood: "39811136789" },
 // Lisa kontrollimiseks oma nimi ja isikukood
 ];
+
+inimesteAndmed.forEach(inimene => {
+    console.log(inimene.isikukood[5]+inimene.isikukood[6]+"."+inimene.isikukood[3]+inimene.isikukood[4])
+});
