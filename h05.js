@@ -103,8 +103,31 @@ const kokku = (...nr) => {
 
 const nimed = ["mari maasikas", "jaan jõesaar", "kristiina kukk", "margus mustikas", "jaak järve", "kadi kask", "Toomas Tamm", "Kadi Meri", "Leena Laas", "Madis Mets", "Hannes Hõbe", "Anu Allikas", "Kristjan Käär", "Eva Esimene", "Jüri Jõgi", "Liis Lepik", "Kalle Kask", "Tiina Teder", "Kaidi Koppel", "tiina Toom"];
 
-nimed.forEach(nimi => {
-    let enimi =(nimi.split(" ")[0])
-    let pnimi =(nimi.split(" ")[1])
-    console.log(enimi.charAt(0).toUpperCase()+enimi.slice(1)+" "+pnimi.charAt(0).toUpperCase()+pnimi.slice(1))
-});
+// nimed.forEach(nimi => {
+//     let enimi =(nimi.split(" ")[0])
+//     let pnimi =(nimi.split(" ")[1])
+//     console.log(enimi.charAt(0).toUpperCase()+enimi.slice(1)+" "+pnimi.charAt(0).toUpperCase()+pnimi.slice(1))
+// });
+
+// const puhastanimed = (...nimed) => {
+//     nimed[0].forEach(nimi => {
+//         let enimi =(nimi.split(" ")[0])
+//         let pnimi =(nimi.split(" ")[1])
+//         console.log(enimi.charAt(0).toUpperCase()+enimi.slice(1)+" "+pnimi.charAt(0).toUpperCase()+pnimi.slice(1))  
+//     });
+    
+// }
+
+// puhastanimed(nimed)
+
+// 11.2 Sünniaeg ja vanus
+
+const inimesteAndmed = [
+{ nimi: "Mari Maasikas", isikukood: "38705123568" },
+{ nimi: "Jaan Jõesaar", isikukood: "49811234567" },
+{ nimi: "Kristiina Kukk", isikukood: "39203029876" },
+{ nimi: "Margus Mustikas", isikukood: "49807010346" },
+{ nimi: "Jaak Järve", isikukood: "39504234985" },
+{ nimi: "Kadi Kask", isikukood: "39811136789" },
+// Lisa kontrollimiseks oma nimi ja isikukood
+];
